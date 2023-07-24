@@ -6,36 +6,51 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Домашнее задание №6");
-        System.out.println("Условные операторы. Урок 1");
-        //Задание 1
-        //task1();
-        System.out.println(".....");
-        //Задание 2
-        //task2();
-        System.out.println(".....");
-        //Задание 3
-        //task3();
-        System.out.println(".....");
-        //Задание 4
-        //task4();
-        System.out.println(".....");
-        //Задание 5
-        //task5();
-        System.out.println(".....");
-        //Задание 6
-        //task6();
-        System.out.println(".....");
-        //Задание 7
-        //task7();
-        System.out.println(".....");
-        //Задание 8
-        //task8();
-        System.out.println(".....");
-        //Задание 9
-        //task9();
-        System.out.println(".....");
-        //Задание 10
-        task10();
+        System.out.println("Циклические операторы. Урок 1");
+        int taskNumberRun  = Integer.parseInt(JOptionPane.showInputDialog(null,
+                "Какое задание нужно выполнить? (1-10)"));
+        switch (taskNumberRun) {
+            case 1 -> {
+                task1();  //Задание 1
+                break;
+            }
+            case 2 -> {
+                task2();  //Задание 2
+                break;
+            }
+            case 3 -> {
+                task3();    //Задание 3
+                break;
+            }
+            case 4 -> {
+                task4();    //Задание 4
+                break;
+            }
+            case 5 -> {
+                task5();    //Задание 5
+                break;
+            }
+            case 6 -> {
+                task6();    //Задание 6
+                break;
+            }
+            case 7 -> {
+                task7();    //Задание 7
+                break;
+            }
+            case 8 -> {
+                task8();    //Задание 8
+                break;
+            }
+            case 9 -> {
+                task9();    //Задание 9
+                break;
+            }
+            case 10 -> {
+                task10();    //Задание 10
+                break;
+            }
+        }
         System.out.println("_________");
         System.out.println("Домашка закончилась. Всем спасибо, все свободны.");
         }
