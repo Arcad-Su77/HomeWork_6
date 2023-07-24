@@ -61,7 +61,6 @@ public class Main {
         // в формате: «Месяц …, сумма накоплений равна … рублей».
         // #17:02
         //Инициализация
-        String outLine = "";
         int vkladTotal = 0;
         int monthNumber = Integer.parseInt(JOptionPane.showInputDialog(null,
                 "На какой срок хотите вложить средства (мес):"));
