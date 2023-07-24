@@ -7,9 +7,16 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Домашнее задание №6");
         System.out.println("Циклические операторы. Урок 1");
-        int taskNumberRun  = Integer.parseInt(JOptionPane.showInputDialog(null,
-                "Какое задание нужно выполнить? (1-10)"));
+        int taskNumberRun  = 1;
+        try {
+            taskNumberRun = Integer.parseInt(JOptionPane.showInputDialog(null,
+                    "Какое задание нужно выполнить? (1-10)"));
+        } catch (Exception e) {
+            taskNumberRun = 0;
+            //e.printStackTrace(); // Выводит сообщение об ошибке
+        }
         switch (taskNumberRun) {
+            case 0 -> {break;}
             case 1 -> {
                 task1();  //Задание 1
                 break;
