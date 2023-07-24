@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Домашнее задание №6");
         System.out.println("Циклические операторы. Урок 1");
-        int taskNumberRun  = 1;
+        int taskNumberRun;
         try {
             taskNumberRun = Integer.parseInt(JOptionPane.showInputDialog(null,
                     "Какое задание нужно выполнить? (1-10)"));
@@ -16,47 +16,17 @@ public class Main {
             //e.printStackTrace(); // Выводит сообщение об ошибке
         }
         switch (taskNumberRun) {
-            case 0 -> {break;}
-            case 1 -> {
-                task1();  //Задание 1
-                break;
-            }
-            case 2 -> {
-                task2();  //Задание 2
-                break;
-            }
-            case 3 -> {
-                task3();    //Задание 3
-                break;
-            }
-            case 4 -> {
-                task4();    //Задание 4
-                break;
-            }
-            case 5 -> {
-                task5();    //Задание 5
-                break;
-            }
-            case 6 -> {
-                task6();    //Задание 6
-                break;
-            }
-            case 7 -> {
-                task7();    //Задание 7
-                break;
-            }
-            case 8 -> {
-                task8();    //Задание 8
-                break;
-            }
-            case 9 -> {
-                task9();    //Задание 9
-                break;
-            }
-            case 10 -> {
-                task10();    //Задание 10
-                break;
-            }
+            case 1 -> task1();  //Задание 1
+            case 2 -> task2();  //Задание 2
+            case 3 -> task3();    //Задание 3
+            case 4 -> task4();    //Задание 4
+            case 5 -> task5();    //Задание 5
+            case 6 -> task6();    //Задание 6
+            case 7 -> task7();    //Задание 7
+            case 8 -> task8();    //Задание 8
+            case 9 -> task9();    //Задание 9
+            case 10 -> task10();    //Задание 10
+            default -> System.out.println("Вы не выбрали задание!?: " + taskNumberRun);
         }
         System.out.println("_________");
         System.out.println("Домашка закончилась. Всем спасибо, все свободны.");
@@ -119,7 +89,6 @@ public class Main {
         // в формате: «Месяц …, сумма накоплений равна … рублей».
         // #16:54
         //Инициализация
-        String outLine = "";
         int vkladTotal = 0;
         int monthNumber = Integer.parseInt(JOptionPane.showInputDialog(null,
                 "На какой срок хотите вложить средства (мес):"));
