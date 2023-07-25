@@ -16,8 +16,8 @@ public class Main {
             //e.printStackTrace(); // Выводит сообщение об ошибке
         }
         switch (taskNumberRun) {
-            case 1 -> task1();  //Задание 1
-            case 2 -> task2();  //Задание 2
+            case 1 -> task1();    //Задание 1
+            case 2 -> task2();    //Задание 2
             case 3 -> task3();    //Задание 3
             case 4 -> task4();    //Задание 4
             case 5 -> task5();    //Задание 5
@@ -30,7 +30,7 @@ public class Main {
         }
         System.out.println("_________");
         System.out.println("Домашка закончилась. Всем спасибо, все свободны.");
-        }
+    }
 
     private static void task10() {
         System.out.println("Задание 10");
@@ -42,8 +42,8 @@ public class Main {
                 stopX = 10, stopY = 10,
                 gradientX = 1, gradientY = 1;
         //Решение
-        for (int X = strartX; X <= stopX; X=X+gradientX) {
-            for (int Y = startY; Y <= stopY; Y=Y+gradientY) {
+        for (int X = strartX; X <= stopX; X = X + gradientX) {
+            for (int Y = startY; Y <= stopY; Y = Y + gradientY) {
                 outLine = outLine + X * Y + "\t";
             }
             //Вывод
@@ -64,18 +64,18 @@ public class Main {
         int vkladTotal = 0;
         int monthNumber = Integer.parseInt(JOptionPane.showInputDialog(null,
                 "На какой срок хотите вложить средства (мес):"));
-        int vkladMount  = Integer.parseInt(JOptionPane.showInputDialog(null,
+        int vkladMount = Integer.parseInt(JOptionPane.showInputDialog(null,
                 "Какой сумму готовы вкладывать (руб):"));
-        int procentMount  = Integer.parseInt(JOptionPane.showInputDialog(null,
+        int procentMount = Integer.parseInt(JOptionPane.showInputDialog(null,
                 "Какой процент годовых обещал банк (1-100):"));
         int strartI = 1,
                 stopI = monthNumber,
                 gradientI = 1;
         //Решение
-        for (int i = strartI; i <= stopI; i=i+gradientI) {
-            vkladTotal = (vkladTotal + vkladMount)*procentMount/12;
+        for (;strartI <= stopI; strartI = strartI + gradientI) {
+            vkladTotal = (vkladTotal + vkladMount) * procentMount / 12;
             //Вывод
-            System.out.println("Месяц "+i+", сумма накоплений равна "+vkladTotal+" рублей");
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + vkladTotal + " рублей");
         }
     }
 
@@ -91,16 +91,16 @@ public class Main {
         int vkladTotal = 0;
         int monthNumber = Integer.parseInt(JOptionPane.showInputDialog(null,
                 "На какой срок хотите вложить средства (мес):"));
-        int vkladMount  = Integer.parseInt(JOptionPane.showInputDialog(null,
+        int vkladMount = Integer.parseInt(JOptionPane.showInputDialog(null,
                 "Какой сумму готовы вкладывать (руб):"));
         int strartI = 1,
                 stopI = monthNumber,
                 gradientI = 1;
         //Решение
-        for (int i = strartI; i <= stopI; i=i+gradientI) {
+        for (; strartI <= stopI; strartI = strartI + gradientI) {
             vkladTotal = vkladTotal + vkladMount;
             //Вывод
-            System.out.println("Месяц "+i+", сумма накоплений равна "+vkladTotal+" рублей");
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + vkladTotal + " рублей");
         }
     }
 
@@ -115,7 +115,7 @@ public class Main {
                 stopI = 1024,
                 gradientI = 2;
         //Решение
-        for (int i = strartI; i <= stopI; i=i*gradientI) {
+        for (; strartI <= stopI; strartI = strartI * gradientI) {
             //Вывод
             System.out.println(outLine + i);
         }
@@ -132,7 +132,7 @@ public class Main {
                 stopI = 98,
                 gradientI = 7;
         //Решение
-        for (int i = strartI; i <= stopI; i=i+gradientI) {
+        for (; strartI <= stopI; strartI = strartI + gradientI) {
             //Вывод
             System.out.println(outLine + i);
         }
@@ -147,12 +147,12 @@ public class Main {
         //Инициализация
         String outLine = " год является високосным.";
         int strartI = 1904,
-            stopI = 2096,
-            gradientI = 4;
+                stopI = 2096,
+                gradientI = 4;
         //Решение
-        for (int year = strartI; year <= stopI; year=year+gradientI) {
+        for (int year = strartI; year <= stopI; year = year + gradientI) {
             //Вывод
-            System.out.println(year+outLine);
+            System.out.println(year + outLine);
         }
     }
 
@@ -162,10 +162,10 @@ public class Main {
         //Инициализация
         String outLine = "Итерация :";
         int strartI = 10,
-            stopI = -10,
-            gradientI = -1;
+                stopI = -10,
+                gradientI = -1;
         //Решение
-        for (int i=strartI; i>=stopI; i=i+gradientI) {
+        for (; strartI >= stopI; strartI = strartI + gradientI) {
             //Вывод
             System.out.println(outLine + i);
         }
@@ -178,7 +178,7 @@ public class Main {
         String outLine = "Итерация :";
 
         //Решение
-        for (int i=0; i<17; i+=2) {
+        for (int i = 0; i < 17; i += 2) {
             //Вывод
             System.out.println(outLine + i);
         }
@@ -191,7 +191,7 @@ public class Main {
         String outLine = "Итерация :";
 
         //Решение
-        for (int i=10; i>0; i--) {
+        for (int i = 10; i > 0; i--) {
             //Вывод
             System.out.println(outLine + i);
         }
@@ -204,7 +204,7 @@ public class Main {
         String outLine = "Итерация :";
 
         //Решение
-        for (int i=1; i<=10; i++) {
+        for (int i = 1; i <= 10; i++) {
             //Вывод
             System.out.println(outLine + i);
         }
