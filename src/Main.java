@@ -75,7 +75,7 @@ public class Main {
         for (;strartI <= stopI; strartI = strartI + gradientI) {
             vkladTotal = (vkladTotal + vkladMount) * procentMount / 12;
             //Вывод
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + vkladTotal + " рублей");
+            System.out.println("Месяц " + strartI + ", сумма накоплений равна " + vkladTotal + " рублей");
         }
     }
 
@@ -100,7 +100,7 @@ public class Main {
         for (; strartI <= stopI; strartI = strartI + gradientI) {
             vkladTotal = vkladTotal + vkladMount;
             //Вывод
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + vkladTotal + " рублей");
+            System.out.println("Месяц " + strartI + ", сумма накоплений равна " + vkladTotal + " рублей");
         }
     }
 
@@ -117,7 +117,7 @@ public class Main {
         //Решение
         for (; strartI <= stopI; strartI = strartI * gradientI) {
             //Вывод
-            System.out.println(outLine + i);
+            System.out.println(outLine + strartI);
         }
     }
 
@@ -134,7 +134,7 @@ public class Main {
         //Решение
         for (; strartI <= stopI; strartI = strartI + gradientI) {
             //Вывод
-            System.out.println(outLine + i);
+            System.out.println(outLine + strartI);
         }
     }
 
@@ -167,7 +167,7 @@ public class Main {
         //Решение
         for (; strartI >= stopI; strartI = strartI + gradientI) {
             //Вывод
-            System.out.println(outLine + i);
+            System.out.println(outLine + strartI);
         }
     }
 
